@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>관리자 메인 | FitDesk</title>
+    <link rel="stylesheet" href="../shared/css/common.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside id="sidebar" class="sidebar"></aside>
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Admin</p>
+            <h1>관리자 메인</h1>
+          </div>
+        </header>
+
+        <section class="summary-grid">
+          <article class="summary-card">
+            <span>전체 회원</span>
+            <strong id="totalMembers">0</strong>
+          </article>
+          <article class="summary-card">
+            <span>만료 예정</span>
+            <strong id="expiringMembers">0</strong>
+          </article>
+          <article class="summary-card">
+            <span>미납 회원</span>
+            <strong id="unpaidMembers">0</strong>
+          </article>
+          <article class="summary-card">
+            <span>오늘 출석</span>
+            <strong id="todayAttendance">0</strong>
+          </article>
+        </section>
+
+        <section class="panel dashboard-panel">
+          <div class="section-title">
+            <div>
+              <p class="eyebrow">Recent</p>
+              <h2>최근 회원 상태</h2>
+            </div>
+            <a class="mini-button" href="./members/list.html">회원 관리</a>
+          </div>
+          <div id="recentMembers" class="stack-list"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../shared/js/sample-data.js"></script>
+    <script src="../shared/js/storage.js"></script>
+    <script src="../shared/js/utils.js"></script>
+    <script src="../shared/components/navigation.js"></script>
+    <script src="../shared/components/header.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

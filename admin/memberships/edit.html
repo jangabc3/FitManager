@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원권 수정 | FitDesk</title>
+    <link rel="stylesheet" href="../../shared/css/common.css" />
+    <link rel="stylesheet" href="./edit.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside id="sidebar" class="sidebar"></aside>
+      <main class="main-panel">
+        <header class="topbar"><div><p class="eyebrow">Update</p><h1>회원권 수정</h1></div></header>
+        <form id="membershipForm" class="panel">
+          <div class="form-grid">
+            <label>회원권 종류 <input id="membershipType" required type="text" /></label>
+            <label>시작일 <input id="startDate" required type="date" /></label>
+            <label>만료일 <input id="endDate" required type="date" /></label>
+          </div>
+          <button class="primary-button form-submit" type="submit">수정 저장</button>
+        </form>
+      </main>
+    </div>
+    <script src="../../shared/js/sample-data.js"></script>
+    <script src="../../shared/js/storage.js"></script>
+    <script src="../../shared/js/utils.js"></script>
+    <script src="../../shared/components/navigation.js"></script>
+    <script src="../../shared/components/header.js"></script>
+    <script src="./edit.js"></script>
+  </body>
+</html>

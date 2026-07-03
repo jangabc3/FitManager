@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>내 출석 | FitDesk</title>
+    <link rel="stylesheet" href="../../shared/css/common.css" />
+    <link rel="stylesheet" href="./list.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside id="sidebar" class="sidebar"></aside>
+      <main class="main-panel">
+        <header class="topbar"><div><p class="eyebrow">My Attendances</p><h1>내 출석 내역</h1></div></header>
+        <section class="panel">
+          <div class="section-title">
+            <div>
+              <p class="eyebrow">Attendance</p>
+              <h2 id="attendanceTitle">출석 기록</h2>
+            </div>
+          </div>
+          <div id="attendanceList" class="stack-list"></div>
+        </section>
+      </main>
+    </div>
+    <script src="../../shared/js/sample-data.js"></script>
+    <script src="../../shared/js/storage.js"></script>
+    <script src="../../shared/js/utils.js"></script>
+    <script src="../../shared/components/navigation.js"></script>
+    <script src="../../shared/components/header.js"></script>
+    <script src="./list.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마이페이지 | FitDesk</title>
+    <link rel="stylesheet" href="../shared/css/common.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside id="sidebar" class="sidebar"></aside>
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">My Page</p>
+            <h1>마이페이지</h1>
+          </div>
+        </header>
+
+        <section id="memberSummary" class="panel"></section>
+
+        <section class="role-grid" aria-label="마이페이지 메뉴">
+          <a class="role-card" href="./memberships/list.html">
+            <p class="eyebrow">Memberships</p>
+            <h2>내 회원권</h2>
+            <p class="subtle">회원권 정보와 이용 상태를 확인합니다.</p>
+          </a>
+          <a class="role-card" href="./payments/list.html">
+            <p class="eyebrow">Payments</p>
+            <h2>내 결제</h2>
+            <p class="subtle">결제 금액과 납부 상태를 확인합니다.</p>
+          </a>
+          <a class="role-card" href="./attendances/list.html">
+            <p class="eyebrow">Attendances</p>
+            <h2>내 출석</h2>
+            <p class="subtle">개인 출석 내역을 확인합니다.</p>
+          </a>
+        </section>
+      </main>
+    </div>
+
+    <script src="../shared/js/sample-data.js"></script>
+    <script src="../shared/js/storage.js"></script>
+    <script src="../shared/js/utils.js"></script>
+    <script src="../shared/components/navigation.js"></script>
+    <script src="../shared/components/header.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

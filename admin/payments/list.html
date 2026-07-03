@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>결제 목록 | FitDesk</title>
+    <link rel="stylesheet" href="../../shared/css/common.css" />
+    <link rel="stylesheet" href="./list.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside id="sidebar" class="sidebar"></aside>
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Payments</p>
+            <h1>결제 목록</h1>
+          </div>
+          <a class="primary-button" href="./create.html">결제 등록</a>
+        </header>
+        <section class="panel">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>회원</th>
+                  <th>회원권</th>
+                  <th>금액</th>
+                  <th>상태</th>
+                  <th>관리</th>
+                </tr>
+              </thead>
+              <tbody id="paymentTableBody"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="../../shared/js/sample-data.js"></script>
+    <script src="../../shared/js/storage.js"></script>
+    <script src="../../shared/js/utils.js"></script>
+    <script src="../../shared/components/navigation.js"></script>
+    <script src="../../shared/components/header.js"></script>
+    <script src="./list.js"></script>
+  </body>
+</html>

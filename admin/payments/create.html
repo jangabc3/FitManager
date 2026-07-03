@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>결제 등록 | FitDesk</title>
+    <link rel="stylesheet" href="../../shared/css/common.css" />
+    <link rel="stylesheet" href="./create.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside id="sidebar" class="sidebar"></aside>
+      <main class="main-panel">
+        <header class="topbar"><div><p class="eyebrow">Create</p><h1>결제 등록</h1></div></header>
+        <form id="paymentForm" class="panel">
+          <div class="form-grid">
+            <label>회원
+              <select id="memberId"></select>
+            </label>
+            <label>결제금액 <input id="paymentAmount" required min="0" step="1000" type="number" /></label>
+            <label>
+              결제상태
+              <select id="paymentStatus">
+                <option value="완료">완료</option>
+                <option value="미납">미납</option>
+              </select>
+            </label>
+          </div>
+          <button class="primary-button form-submit" type="submit">결제 저장</button>
+        </form>
+      </main>
+    </div>
+    <script src="../../shared/js/sample-data.js"></script>
+    <script src="../../shared/js/storage.js"></script>
+    <script src="../../shared/js/utils.js"></script>
+    <script src="../../shared/components/navigation.js"></script>
+    <script src="../../shared/components/header.js"></script>
+    <script src="./create.js"></script>
+  </body>
+</html>

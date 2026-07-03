@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원 목록 | FitDesk</title>
+    <link rel="stylesheet" href="../../shared/css/common.css" />
+    <link rel="stylesheet" href="./list.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside id="sidebar" class="sidebar"></aside>
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Admin Members</p>
+            <h1>회원 목록</h1>
+          </div>
+          <a class="primary-button" href="./create.html">회원 등록</a>
+        </header>
+
+        <section class="panel">
+          <div class="section-title">
+            <div>
+              <p class="eyebrow">Search</p>
+              <h2>회원 검색</h2>
+            </div>
+          </div>
+          <label>이름 또는 연락처 <input id="memberSearch" type="search" placeholder="검색어 입력" /></label>
+        </section>
+
+        <section class="panel members-table-panel">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>회원</th>
+                  <th>회원권</th>
+                  <th>만료일</th>
+                  <th>상태</th>
+                  <th>결제</th>
+                  <th>최근 출석</th>
+                  <th>관리</th>
+                </tr>
+              </thead>
+              <tbody id="memberTableBody"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../../shared/js/sample-data.js"></script>
+    <script src="../../shared/js/storage.js"></script>
+    <script src="../../shared/js/utils.js"></script>
+    <script src="../../shared/components/navigation.js"></script>
+    <script src="../../shared/components/header.js"></script>
+    <script src="./list.js"></script>
+  </body>
+</html>
